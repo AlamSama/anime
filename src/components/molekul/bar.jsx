@@ -10,8 +10,8 @@ function Bar({ handleMenu, menu, handleSearch, search }) {
             <div className='text-white text-2xl lg:hidden cursor-pointer' onClick={handleSearch}>
                 <AiOutlineSearch />
             </div>
-            <div className={`w-full bg-gradient-to-r from-black to-indigo-400 absolute left-0 top-12 transition-all overflow-hidden z-10 ${search ? 'max-h-[500px] p-1' : 'max-h-0'} lg:static lg:max-h-[500px]`}>
-                <input type="text" className="outline-none w-full px-2 py-1 lg:px-3" placeholder='Search...' onChange={handleChange} />
+            <div className={`w-full rounded-md bg-gradient-to-r from-black to-indigo-400 absolute left-0 top-12 transition-all overflow-hidden z-10 ${search ? 'max-h-[500px] p-1' : 'max-h-0'} lg:static lg:max-h-[500px]`}>
+                <input type="text" className="outline-none rounded-md w-full px-2 py-1 lg:px-3" placeholder='Search...' onChange={handleChange} />
             </div>
 
             <div onClick={handleMenu} className="overflow-hidden lg:hidden cursor-pointer">
